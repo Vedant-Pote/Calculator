@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="calculator">
+    <input id="display" readonly>
+    <div class="buttons">
+     
+        <button onclick="
+        appendToDisplay('1');
+        calculation += '1'
+        console.log(calculation);
+        ">1</button>
+
+        <button onclick="
+        appendToDisplay('2');
+        calculation += '2'
+        console.log(calculation);
+        ">2</button>
+        
+        <button onclick="
+        appendToDisplay('3');
+        calculation += '3'
+        console.log(calculation);
+        ">3</button>
+
+        <button  class="operator-btn" onclick="
+        appendToDisplay('+');
+        calculation += '+'
+        console.log(calculation);
+        ">+</button>
+       
+        <button onclick="
+        appendToDisplay('4');
+        calculation += '4'
+        console.log(calculation);
+        ">4</button>
+
+        <button onclick="
+        appendToDisplay('5');
+        calculation += '5'
+        console.log(calculation);
+        ">5</button>
+
+        <button onclick="
+        appendToDisplay('6');
+        calculation += '6'
+        console.log(calculation);
+        ">6</button>
+        
+        <button class="operator-btn" onclick="
+        appendToDisplay('-')
+        calculation += '-';
+        console.log(calculation);
+        ">-</button>
+        
+        <button onclick="
+        appendToDisplay('7');
+        calculation += '7'
+        console.log(calculation);
+        ">7</button>
+        
+        <button onclick="
+        appendToDisplay('8');
+        calculation += '8'
+        console.log(calculation);
+        ">8</button>
+
+        <button onclick="
+        appendToDisplay('9');
+        calculation += '9'
+        console.log(calculation);
+        ">9</button>
+
+        <button class="operator-btn" onclick="
+        appendToDisplay('*');
+        calculation += '*'
+        console.log(calculation);
+        ">*</button>
+
+        <button onclick="
+        appendToDisplay('0');
+        calculation += '0'
+        console.log(calculation);
+        ">0</button>
+
+        <button onclick="
+        appendToDisplay('.');
+        calculation += '.'
+        console.log(calculation);
+        ">.</button>
+
+        <button class="operator-btn-e" onclick="
+        calculate()
+        calculation = eval(calculation);
+        console.log(calculation);
+        ">=</button>
+      
+        <button class="operator-btn" onclick="
+        appendToDisplay('/');
+        calculation += '/'
+        console.log(calculation);
+        ">/</button>
+
+        <p>
+            <button class="operator-btn" onclick="
+            clearDisplay()
+            calculation = '';
+            console.log(calculation)"
+            >C</button>
+        </p>
+        </div>
+    </div>
+        <script>
+            let calculation = '';
+        </script>
+
+    <script src="index.js"></script>
+</body>
+</html>
